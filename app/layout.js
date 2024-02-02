@@ -13,7 +13,7 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  metadataBase: new URL('http://localhost:3000/'),
+  metadataBase: new URL('http://localhost:3000/' ),
 
   title: {
     default: 'Natural Furits | A Symphony of Taste and Wellness in Every Bite',

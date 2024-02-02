@@ -4,7 +4,7 @@ import axios from 'axios';
 import React, { createContext, useContext, useState } from 'react';
 
 async function productsData(pageNumber) {
-    const res = await axios.get(`http://localhost:3000/api/product`);
+    const res = await axios.get(`http://localhost:3000/api/product` || `https://fruitsshop.vercel.app/api/product`);
     return res.data;
 }
 

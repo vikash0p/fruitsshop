@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { add } from '@/Redux/CartSlice';
 
 const fetchProductOne = async (oneProduct) => {
-  const response = await axios.get(`http://localhost:3000/api/product/${oneProduct}`);
+  const response = await axios.get(`http://localhost:3000/api/product/${oneProduct}` || `https://fruitsshop.vercel.app/api/product/${oneProduct}`);
   return response.data;
 };
 
