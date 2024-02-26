@@ -30,7 +30,7 @@ export default function Cart() {
   };
 
   return (
-    <div className='w-full min-h-screen bg-slate-950 text-white flex flex-col lg:flex-col '>
+    <div className='w-full min-h-screen bg-slate-950 text-white flex flex-col lg:flex-row '>
       <div className=" lg:basis-3/4">
         <ul className=''>
           {
