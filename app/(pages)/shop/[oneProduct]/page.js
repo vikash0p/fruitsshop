@@ -8,7 +8,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
     const id = params.oneProduct
 
     // fetch data
-    const products = await fetch(`${process.env.NEXTAUTH_URL}/api/product/${id}` ).then((res) => res.json());
+    const products = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/product/${id}` ).then((res) => res.json());
 
     // optionally access and extend (rather than replace) parent metadata
 
